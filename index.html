@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Neon Pulse</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="ui">
+  <div id="hud" class="hidden">
+    <div class="hud-top">
+      <div id="hud-name"></div>
+      <div class="hud-mid"><div id="hud-bar"><i id="hud-fill"></i></div><b id="hud-pct">0%</b></div>
+      <div class="hud-right"><span id="hud-att">Attempt 1</span><button id="hud-pause" class="icon-btn" aria-label="Pause"></button></div>
+    </div>
+    <div id="hud-practice" class="hidden">
+      <button id="cp-add" class="primary">◆ Place <kbd>Z</kbd></button><button id="cp-del" class="dark">✕ Remove <kbd>X</kbd></button>
+      <label class="chk"><input type="checkbox" id="cp-auto"> Auto</label><span id="cp-count"></span>
+    </div>
+    <div id="countdown"></div>
+    <div id="death-msg" class="hidden"></div>
+  </div>
+  <div id="screens"></div>
+  <div id="pause" class="overlay hidden"></div>
+  <div id="win" class="overlay hidden"></div>
+  <div id="toasts"></div>
+  <button id="mute-btn" class="icon-btn" aria-label="Mute" title="Mute / unmute (M)"></button>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
